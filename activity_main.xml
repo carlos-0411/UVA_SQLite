@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título da aplicação -->
+    <TextView
+        android:id="@+id/txtTituloApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Livraria Digital"
+        android:textColor="@color/txtTituloApp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <!-- Campos de entrada de texto para título, autor e ano -->
+    <!-- Titulo -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título do Livro"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#00796B">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Autor -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Autor"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#00796B">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtAutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Ano -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Ano de Publicação"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#00796B">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtAno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Botão de salvar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Salvar"
+        android:textColor="@color/button_text"
+        app:backgroundTint="#00796B"
+        app:icon="@android:drawable/ic_menu_save"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp" />
+
+
+    <!-- ListView para exibir os livros -->
+    <ListView
+        android:id="@+id/listViewLivros"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="@color/app_background"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp" />
+
+
+</LinearLayout>

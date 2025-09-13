@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CatalogoDeLivros" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.CatalogoDeLivros" parent="Base.Theme.CatalogoDeLivros" />
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="input_outline_color">#00796B</color>
+    <color name="button_background_color">#00796B</color>
+    <color name="list_background_color">#F5F5F5</color> <!-- ou use app_background -->
+    <color name="txtTituloApp_color">#00796B</color>
+
+</resources>

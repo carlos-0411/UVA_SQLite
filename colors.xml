@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <!-- Cores do seu app para tema escuro -->
+    <color name="app_background">#121212</color> <!-- Fundo escuro comum -->
+    <color name="text_primary">#FFFFFFFF</color> <!-- Texto claro em fundo escuro -->
+    <color name="text_secondary">#B3FFFFFF</color> <!-- Texto secundário (70% alpha) -->
+    <color name="card_background">#1E1E1E</color> <!-- Cor de card um pouco mais clara que o fundo -->
+    <color name="button_background">#00ACC1</color> <!-- Uma variante mais clara ou diferente do seu verde-->
+    <color name="button_text">#FF000000</color> <!-- Texto escuro se o botão for claro -->
+    <color name="primary_brand_color">#4DB6AC</color> <!-- Variante mais clara do seu verde para tema escuro -->
+    <color name="txtTituloApp">#4DB6AC</color>
+</resources>
